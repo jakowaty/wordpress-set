@@ -1,0 +1,740 @@
+/*
+Theme Name: Jakit
+Theme URI: https://herbalist.hekko.pl
+Author: Piotr B. <herbalist@herbalist.hekko24.pl>
+Author URI: https://herbalist.hekko24.pl
+Description: My custom wordpress theme
+Version: 1.0
+License: Not licensed for public usage
+License URI:
+Tags: blog, gallery, presentation
+Text Domain: jakit
+*/
+
+
+/*************************************/
+/*************************************/
+/************GENERIC******************/
+/*************************************/
+/*************************************/
+/*************************************/
+/* latin */
+@font-face {
+    font-family: 'PressStart2P';
+    font-style: normal;
+    font-weight: 200;
+    src: url('./fonts/latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* TEXT */
+.l-spac-2p {
+    letter-spacing: 2px;
+}
+
+.f-size-08em {
+    font-size: 0.8em;
+}
+
+.f-size-05em {
+    font-size: 0.5em;
+}
+
+.f-size-2em {
+    font-size: 2em;
+}
+
+.f-stretch-exp {
+    font-stretch: expanded;
+}
+
+.txt-cnt {
+    text-align: center;
+}
+.txt-middle-v {
+    vertical-align: 50% !important;
+}
+
+.decoration-none:hover {
+    text-decoration: none;
+}
+/* _________________________________________ */
+
+
+/* BORDERS */
+
+.br-solid-white-1 {
+    border: 1px solid white;
+}
+
+.br-solid-grey-1 {
+    border: 1px solid #888888;
+}
+
+.br-solid-monochrome-1 {
+    border: 1px solid #528013 !important;
+}
+
+/* _________________________________________ */
+
+/* POSITIONS */
+.pad3px {
+    padding: 3px;
+}
+
+.zindex100 {
+    z-index: 10000000;
+}
+
+.mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mtop10p {
+    margin-top: 10px;
+}
+
+.mtop2e {
+    margin-top: 2em;
+}
+
+.mbot5p {
+    margin-bottom: 5px;
+}
+
+.mbot1e {
+    margin-bottom: 1em;
+}
+
+.mrig10p {
+    margin-right: 10px;
+}
+
+.mtop0 {
+    margin-top: 0;
+}
+
+.mtop2p {
+    margin-top: 2px;
+}
+
+.margin0 {
+    margin: 0px !important;
+}
+
+.mlr5p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.txt_cnt {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.block {
+    display: block !important;
+    clear: both !important;
+}
+
+.block-noclear {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.ov-hid {
+    overflow: hidden;
+}
+
+.f-left {
+    float: left;
+}
+
+.prelative {
+    position: relative;
+}
+/* _________________________________________ */
+
+
+/* DIMENSIONS */
+
+.w30p {
+    width: 30%;
+}
+
+.w60p {
+    width:60%;
+}
+
+.w65p {
+    width:65%;
+}
+
+.w70p {
+    width: 70%;
+}
+
+.w76p {
+    width: 76%;
+}
+
+.w80p {
+    width: 80%;
+}
+
+.w90p {
+    width: 90%;
+}
+
+.w96p {
+    width: 96%;
+}
+
+.w98p {
+    width: 98%;
+}
+
+.w100p {
+    width: 100%;
+}
+.w99p {
+    width: 99%;
+}
+
+
+.h8m {
+   height: 8em;
+}
+
+.h3em {
+    height: 3em;
+}
+/* _________________________________________ */
+
+
+/* BADGES */
+.jakit-badge {
+    display: inline-block;
+}
+
+.jakit-badge-1 {
+    /* this can be used with bootstrap h1 - 36px font size */
+    color: black;
+    background-color: white;
+    font-size: 23px !important;
+    border-top: 4px solid white;
+    border-radius: 25px;
+    padding: 4px;
+    font-weight: bolder;
+    vertical-align: middle;
+    box-shadow: orangered 4px 2px 0px;
+}
+
+.jakit-badge-small-1 {
+    background-color: #7f7f7f;
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+.jakit-badge-small-1 a {
+    color: white !important;
+}
+
+.jakit-badge-small-1 a:hover, .jakit-badge-small-1 a:focus {
+    text-decoration: none;
+}
+
+/* _________________________________________ */
+
+/* COLORS */
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-monochrome {
+    background-color: #528013 !important;
+}
+
+.color-grey1 {
+    color: #aa9d88;
+}
+
+.color-dark-grey-1 {
+    color: #7f7f7f !important;
+}
+
+.color-red {
+    color: #ff2222;
+}
+
+.color-green {
+    color: #3c763d;
+}
+
+.color-black {
+    color: black !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-monochrome {
+    color: #528013 !important;
+}
+
+.error-msg {
+    color: red !important;
+}
+
+.success-msg {
+    color: green !important;
+}
+/* _________________________________________ */
+
+
+/* ANCHORS */
+.jakit-enumerated-link {
+    -webkit-transition : letter-spacing 500ms linear !important;
+    -moz-transition : letter-spacing 500ms linear !important;
+    -o-transition : letter-spacing 500ms linear !important;
+    transition : letter-spacing 500ms linear !important;
+}
+
+.jakit-enumerated-link:hover, .jakit-enumerated-link:focus {
+    letter-spacing: 3px !important;
+}
+
+/* _________________________________________ */
+
+/* USABLE ELEMENTS */
+.jakit-404 {
+
+}
+/* _________________________________________ */
+
+/*************************************/
+/*************************************/
+/************GENERIC*END**************/
+/*************************************/
+/*************************************/
+/*************************************/
+
+/* ELEMENTS */
+
+body {
+    background-image: url("images/bg_pattern.gif");
+    background-color: #505050 !important;
+    word-break: normal;
+}
+
+.site {
+    margin-top: 1em;
+}
+
+@media (max-width: 450px) {
+    .main {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        background-color: #333;
+        min-height: 500px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 451px) {
+    .main {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        background-color: #333;
+        min-height: 500px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 701px){
+    .main {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        background-color: #333;
+        min-height: 500px;
+        width: 70%;
+    }
+}
+
+@media (min-width: 1001px) {
+    .main {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        background-color: #333;
+        min-height: 500px;
+        width: 62%;
+    }
+}
+
+.content-article {
+    background-color: #000000;
+    margin-bottom: 2em;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+.sidebar-header {
+    border-bottom: 2px solid #aa9d88;
+    box-shadow: #b1b1b1;
+    color: orangered;
+}
+
+.jakit-thumbnail-anchor {
+    text-decoration: none !important;
+}
+
+.jakit-thumbnail-icon {
+    border: 1px solid #2e4453;
+    border-radius: 4px;
+    padding: 4px;
+    -webkit-transition : border 500ms ease-out;
+    -moz-transition : border 500ms ease-out;
+    -o-transition : border 500ms ease-out;
+    transition : border 500ms ease-out
+}
+
+.jakit-thumbnail-icon:hover {
+    border-color: #2ea2cc;
+}
+
+.jakit-entry-title {
+    /*text-shadow: black 3px 4px 0px;*/
+    color: white;
+    margin-bottom: 0 !important;
+    margin-top: 4px !important;
+    font-family: "Courier New";
+}
+
+a .jakit-entry-title, .jakit-pagination a {
+    color: #2ea2cc;
+    -webkit-transition : color 500ms linear !important;
+    -moz-transition : color 500ms linear !important;
+    -o-transition : color 500ms linear !important;
+    transition : color 500ms linear !important;
+}
+
+a:hover .jakit-entry-title, .jakit-pagination a:hover {
+    color: white;
+}
+
+.jakit-entry-header a {
+    text-decoration: none !important;
+}
+
+.jakit-separator {
+
+}
+
+.article-shadowed {
+    box-shadow: #505050 1px 1px 6px;
+}
+
+.search-result {
+    margin-bottom: 1em;
+    box-shadow: #656a6f 2px 2px 0px;
+    -webkit-transition : box-shadow 300ms linear !important;
+    -moz-transition : box-shadow 300ms linear !important;
+    -o-transition : box-shadow 300ms linear !important;
+    transition : box-shadow 300ms linear !important;
+}
+
+.search-result:hover {
+    box-shadow: orangered 4px 4px 0px;
+}
+
+.search-post-type-description {
+   /*border-left: 1px #888888 dashed;*/
+    padding-left: 1%;
+}
+
+.search-post-type-sign {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    /* _________________________________________ */
+
+
+/* FOOTER */
+.footer {
+    overflow: hidden;
+    color: white !important;
+    background-color: orangered !important;
+    border: 1px solid black;
+}
+/*___________________________________________*/
+
+
+
+/* MAIN LOGO */
+.page-title {
+    font-family: PressStart2P;
+    font-size: 1.5em !important;
+    letter-spacing: 0.5em;
+    color: black;/*#f08a00*/
+    text-shadow: 2px 2px 3px orangered;
+    line-height: initial;
+}
+
+.page-description {
+    font-size: 0.7em;
+}
+
+.page-main-link:hover {
+    text-decoration: none;
+}
+/*___________________________________________*/
+
+
+
+/* SEARCH INPUT*/
+#s {
+    border-right: none;
+    box-shadow: none;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    border-radius: 0px !important;
+}
+
+#s::placeholder {
+    color: orangered !important;
+    letter-spacing: 0.3em;
+}
+
+#s:focus {
+    border-color: #ccc !important;
+}
+
+#search-button {
+    border: none;
+    background-color: white;
+}
+
+#search-button:focus {
+    -webkit-appearance: none;
+    outline: 0px !important;
+}
+
+.search-input-buttonfield {
+    background-color: white !important;
+    padding: 0px 5px 0px 5px !important;
+    border-left: none;
+    border-radius: 0px !important;
+}
+
+.opaque {
+    background: rgba(255,255,255, 0.5) !important;
+}
+
+#searchform .input-group {
+    border: 1px solid orangered;
+}
+/*___________________________________________*/
+
+/* NAVBAR */
+
+.jakit-navbar .navbar-toggle {
+    background-color: #FFF;
+    border: 1px solid #99D799;
+    border-radius: 2px;
+    margin-right: 20px !important;
+}
+
+
+.jakit-navbar-header {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.jakit-navbar-item-li a{
+    /*border-bottom : 1px solid black !important;*/
+    /*color: black !important;*/
+    /*-webkit-transition : border 500ms ease-out !important;*/
+    /*-moz-transition : border 500ms ease-out !important;*/
+    /*-o-transition : border 500ms ease-out !important;*/
+    /*transition : border 500ms ease-out !important;*/
+    /*background: none !important;*/
+    color: white !important;
+    -webkit-transition : color 500ms linear !important;
+    -moz-transition : color 500ms linear !important;
+    -o-transition : color 500ms linear !important;
+    transition : color 500ms linear !important;
+}
+
+.jakit-navbar-item-li a:hover {
+    color: orangered !important;
+    /*border-bottom: 1px solid white !important;*/
+}
+
+.jakit-navbar-item-li-active {
+    border-bottom : 1px solid black !important;
+    background-color: white !important;
+}
+
+.nav>li>a {
+    text-shadow: none !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: none !important;
+}
+
+
+/*.jakit-navbar-cursor {*/
+/*animation-name: slidein, blink;*/
+/*animation-duration: 2s, 1s;*/
+/*animation-delay: 0s, 2s;*/
+/*animation-iteration-count: 1, infinite;*/
+/*animation-timing-function: ease, steps(2, start);*/
+/*}*/
+
+/*.jakit-navbar-cursor {*/
+/*animation-name: blink;*/
+/*animation-duration: 1s;*/
+/*!*animation-delay: 0s, 3s;*!*/
+/*animation-timing-function: steps(2,start);*/
+/*animation-iteration-count: infinite;*/
+/*}*/
+
+/*@keyframes blink {*/
+/*from {*/
+/*visibility: visible;*/
+/*}*/
+
+/*to {*/
+/*visibility: hidden;*/
+/*}*/
+/*}*/
+
+/*@keyframes slidein {*/
+/*from {*/
+/*margin-left: 100%;*/
+/*width: 300%;*/
+/*}*/
+
+/*to {*/
+/*margin-left: 0%;*/
+/*width: 100%;*/
+/*}*/
+/*}*/
+
+/* nav 2.0 */
+
+.navbar-nav {
+    margin :0 !important;;
+}
+
+.jakit-collapsed-button {
+    color: orangered; !important;
+    border: 1px solid orangered !important;
+}
+
+.jakit-collapsed-button .icon-bar {
+    background-color: orangered !important;
+}
+
+.jakit-nav {
+    background-color: #000000 !important;
+    background-image: none !important;
+    border-radius: 0px !important;
+    border: 1px solid #00AAAA ;
+}
+
+.brand-font {
+    font-family: 'PressStart2P';
+}
+
+.jakit-blog-title {
+    padding: 18px 7px !important;
+    color: white !important;
+    font-size: 25px !important;
+    text-shadow: orangered 2px 2px 3px !important;
+}
+
+.navbar-font {
+    font-family: "Courier New" !important;
+}
+
+.navbar-item {
+    padding: 17px 7px !important;
+}
+
+.navbar-menu-list-divider {
+    background-color: white !important;
+    background-image: none !important;
+    color: orangered !important;
+}
+
+.navbar-menu-list-position {
+    font-size: 0.8em;
+    color: #505050;
+}
+
+li.no-outline:focus {
+    outline: none !important;
+}
+
+.jakit_user_token-input {
+
+}
+
+.jakit_user_token-input:focus {
+    outline: -webkit-focus-ring-color none !important;
+}
+
+.jakit_user_token-button {
+
+}
+/* _________________________________________ */
+
+
+/* CONTACT PAGE */
+
+.contact-block-error {
+    text-align: center;
+    color: #333;
+    background-color: #c34747;
+    border: 2px #ff0000 inset;
+}
+
+.contact-block-success {
+    text-align: center;
+    color: #333;
+    background-color: #8fd85a;
+    border: 2px #bfe605 inset;
+}
+
+.contact-block-none {
+
+}
+
+.contact-block-textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.contact-block-textarea:focus {
+    outline: -webkit-focus-ring-color none !important;
+}
+/* _________________________________________ */

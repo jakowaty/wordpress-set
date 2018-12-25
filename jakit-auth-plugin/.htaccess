@@ -1,0 +1,17 @@
+#/**
+# * @Package Jakit Auth Plugin
+# * @Version 1.0
+# * @Description Verry simple two factor auth login just for personal use
+# * @Author Piotr Be <herbalist@herbalist.hekko24.pl>
+# */
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Do rewrite:
+    # RewriteCond TestString CondPattern [flags]
+    #   - all files besides js/* folder
+    RewriteCond %{REQUEST_URI} !\.js$
+    RewriteRule (.*) - [F]
+</IfModule>

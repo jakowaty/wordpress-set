@@ -1,0 +1,304 @@
+/*
+ * Jakit Wordpress Theme
+ * Author: Piotr Be <herbalist@herbalist.hekko24.pl>
+ */
+
+/* TEXT */
+.l-spac-2p {
+    letter-spacing: 2px;
+}
+
+.f-size-08em {
+    font-size: 0.8em !important;
+}
+
+.f-size-06em {
+    font-size: 0.6em;
+}
+
+.f-size-05em {
+    font-size: 0.5em;
+}
+
+.f-size-2em {
+    font-size: 2em;
+}
+
+.f-stretch-exp {
+    font-stretch: expanded;
+}
+
+.txt-cnt {
+    text-align: center;
+}
+.txt-middle-v {
+    vertical-align: 50% !important;
+}
+
+.decoration-none:hover {
+    text-decoration: none;
+}
+/* _________________________________________ */
+
+
+/* BORDERS */
+
+.br-solid-white-1 {
+    border: 1px solid white;
+}
+
+.br-solid-grey-1 {
+    border: 1px solid #888888;
+}
+
+.br-solid-monochrome-1 {
+    border: 1px solid #528013 !important;
+}
+
+/* _________________________________________ */
+
+/* POSITIONS */
+.pad3px {
+    padding: 3px;
+}
+
+.zindex100 {
+    z-index: 10000000;
+}
+
+.mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mtop10p {
+    margin-top: 10px;
+}
+
+.mtop2e {
+    margin-top: 2em;
+}
+
+.mbot5p {
+    margin-bottom: 5px;
+}
+
+.mbot1e {
+    margin-bottom: 1em;
+}
+
+.mrig10p {
+    margin-right: 10px;
+}
+
+.mtop0 {
+    margin-top: 0;
+}
+
+.mtop2p {
+    margin-top: 2px;
+}
+
+.margin0 {
+    margin: 0px !important;
+}
+
+.mlr5p {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.txt_cnt {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.block {
+    display: block !important;
+    clear: both !important;
+}
+
+.block-noclear {
+    display: block !important;
+}
+
+.none {
+    display: none !important;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.ov-hid {
+    overflow: hidden;
+}
+
+.f-left {
+    float: left;
+}
+
+.prelative {
+    position: relative;
+}
+/* _________________________________________ */
+
+
+/* DIMENSIONS */
+
+.w30p {
+    width: 30%;
+}
+
+.w60p {
+    width:60%;
+}
+
+.w65p {
+    width:65%;
+}
+
+.w70p {
+    width: 70%;
+}
+
+.w76p {
+    width: 76%;
+}
+
+.w80p {
+    width: 80%;
+}
+
+.w90p {
+    width: 90%;
+}
+
+.w96p {
+    width: 96%;
+}
+
+.w98p {
+    width: 98%;
+}
+
+.w100p {
+    width: 100%;
+}
+.w99p {
+    width: 99%;
+}
+
+
+.h8m {
+    height: 8em;
+}
+
+.h3em {
+    height: 3em;
+}
+/* _________________________________________ */
+
+
+/* BADGES */
+.jakit-badge {
+    display: inline-block;
+}
+
+.jakit-badge-1 {
+    /* this can be used with bootstrap h1 - 36px font size */
+    color: black;
+    background-color: white;
+    font-size: 23px !important;
+    border-top: 4px solid white;
+    border-radius: 25px;
+    padding: 4px;
+    font-weight: bolder;
+    vertical-align: middle;
+    box-shadow: orangered 4px 2px 0px;
+}
+
+.jakit-badge-small-1 {
+    background-color: #7f7f7f;
+    padding: 3px;
+    font-size: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    font-weight: bolder;
+}
+
+.jakit-badge-small-1 a {
+    color: white !important;
+}
+
+.jakit-badge-small-1 a:hover, .jakit-badge-small-1 a:focus {
+    text-decoration: none;
+}
+
+/* _________________________________________ */
+
+/* COLORS */
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.bg-monochrome {
+    background-color: #528013 !important;
+}
+
+.color-grey1 {
+    color: #aa9d88;
+}
+
+.color-dark-grey-1 {
+    color: #7f7f7f !important;
+}
+
+.color-red {
+    color: #ff2222;
+}
+
+.color-green {
+    color: #3c763d;
+}
+
+.color-black {
+    color: black !important;
+}
+
+.color-white {
+    color: white !important;
+}
+
+.color-monochrome {
+    color: #528013 !important;
+}
+
+.error-msg {
+    color: red !important;
+}
+
+.success-msg {
+    color: green !important;
+}
+/* _________________________________________ */
+
+
+/* ANCHORS */
+.jakit-enumerated-link {
+    /*-webkit-transition : letter-spacing 500ms linear !important;*/
+    /*-moz-transition : letter-spacing 500ms linear !important;*/
+    /*-o-transition : letter-spacing 500ms linear !important;*/
+    /*transition : letter-spacing 500ms linear !important;*/
+}
+
+.jakit-enumerated-link:hover, .jakit-enumerated-link:focus {
+    /*letter-spacing: 3px !important;*/
+}
+
+/* _________________________________________ */

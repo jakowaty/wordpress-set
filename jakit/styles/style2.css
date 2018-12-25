@@ -1,0 +1,342 @@
+/*
+Theme Name: Jakit
+Theme URI: https://herbalist.hekko24.pl
+Author: Piotr B. <herbalist@herbalist.hekko24.pl>
+Author URI: https://herbalist.hekko24.pl
+Description: My custom wordpress theme
+Version: 1.0
+License: Not licensed for public usage
+License URI:
+Tags: blog, gallery, presentation
+Text Domain: jakit
+*/
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Orbitron';
+    font-weight: normal;
+    src: url('../fonts/Orbitron-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'PoiretOne';
+    font-style: normal;
+    src: url('../fonts/PoiretOne-Regular.ttf') format("truetype");
+}
+
+.poiret-font {
+    font-family: PoiretOne !important;
+}
+
+/**********************body*************************/
+
+/* ELEMENTS */
+
+body {
+    background-color: white !important;
+    word-break: normal;
+}
+
+.site {
+    margin-top: 1em;
+}
+
+.jakit-gallery-excerpt {
+    color: #333;
+}
+
+.content-article {
+    background-color: white;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.sidebar-header {
+    border-bottom: 2px solid #aa9d88;
+    box-shadow: #b1b1b1;
+    color: orangered;
+}
+
+.jakit-thumbnail-anchor {
+    text-decoration: none !important;
+}
+
+.jakit-thumbnail-icon {
+    border: 1px solid #2e4453;
+    border-radius: 4px;
+    padding: 4px;
+    -webkit-transition : border 500ms ease-out;
+    -moz-transition : border 500ms ease-out;
+    -o-transition : border 500ms ease-out;
+    transition : border 500ms ease-out
+}
+
+.jakit-thumbnail-icon:hover {
+    border-color: #2ea2cc;
+}
+
+.jakit-entry-title {
+    margin-bottom: 0 !important;
+    margin-top: 4px !important;
+    font-family: PoiretOne;
+}
+
+.jakit-entry-meta {
+    font-family: PoiretOne;
+}
+
+a .jakit-entry-title, .jakit-pagination a {
+    font-family: PoiretOne;
+}
+
+a:hover .jakit-entry-title, .jakit-pagination a:hover {
+    color: #333 !important;
+}
+
+.jakit-entry-header a {
+    text-decoration-color: #333 !important;
+}
+
+.jakit-separator {}
+
+.article-shadowed {
+    box-shadow: #505050 1px 1px 6px;
+}
+
+.search-result {
+    margin-bottom: 1em;
+    box-shadow: #656a6f 2px 2px 0px;
+    -webkit-transition : box-shadow 300ms linear !important;
+    -moz-transition : box-shadow 300ms linear !important;
+    -o-transition : box-shadow 300ms linear !important;
+    transition : box-shadow 300ms linear !important;
+}
+
+.search-result:hover {
+    box-shadow: orangered 4px 4px 0px;
+}
+
+.search-post-type-description {
+    padding-left: 1%;
+}
+
+.search-post-type-sign {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+    /* _________________________________________ */
+
+
+/* FOOTER */
+.footer {
+    font-size: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    overflow: hidden;
+    color: #333 !important;
+    background-color: orangered !important;
+    border: 1px solid black;
+
+}
+/*___________________________________________*/
+
+
+
+/* MAIN LOGO */
+/*.page-title {*/
+    /*font-family: PressStart2P;*/
+    /*font-size: 1.5em !important;*/
+    /*letter-spacing: 0.5em;*/
+    /*color: black;!*#f08a00*!*/
+    /*text-shadow: 2px 2px 3px orangered;*/
+    /*line-height: initial;*/
+/*}*/
+
+.page-description {
+    font-size: 0.7em;
+}
+
+.page-main-link:hover {
+    text-decoration: none;
+}
+/*___________________________________________*/
+
+
+
+/* SEARCH INPUT*/
+#s {
+    border-right: none;
+    box-shadow: none;
+    outline: 0px !important;
+    -webkit-appearance: none;
+    border-radius: 0px !important;
+}
+
+#s::placeholder {
+    color: orangered !important;
+    letter-spacing: 0.3em;
+}
+
+#s:focus {
+    border-color: #ccc !important;
+}
+
+#search-button {
+    border: none;
+    background-color: white;
+}
+
+#search-button:focus {
+    -webkit-appearance: none;
+    outline: 0px !important;
+}
+
+.search-input-buttonfield {
+    background-color: white !important;
+    padding: 0px 5px 0px 5px !important;
+    border-left: none;
+    border-radius: 0px !important;
+}
+
+#searchform .input-group {
+    border: 1px solid orangered;
+}
+/*___________________________________________*/
+
+/* NAVBAR */
+
+.jakit-navbar .navbar-toggle {
+    background-color: #333;
+    border: 1px solid #99D799;
+    border-radius: 2px;
+    margin-right: 20px !important;
+}
+
+
+.jakit-navbar-header {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.jakit-navbar-item-li > a{
+    /*-webkit-transition : border 500ms ease-out !important;*/
+    /*-moz-transition : border 500ms ease-out !important;*/
+    /*-o-transition : border 500ms ease-out !important;*/
+    /*transition : border 500ms ease-out !important;*/
+
+    font-family: PoiretOne !important;
+    color: white !important;
+    -webkit-transition : color 500ms linear !important;
+    -moz-transition : color 500ms linear !important;
+    -o-transition : color 500ms linear !important;
+    transition : color 500ms linear !important;
+}
+
+.jakit-navbar-item-li > a:hover {
+    color: orangered !important;
+    /*border-bottom: 1px solid white !important;*/
+}
+
+.jakit-navbar-item-li-active {
+    border-bottom : 1px solid black !important;
+    background-color: white !important;
+}
+
+.nav>li>a {
+    text-shadow: none !important;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: none !important;
+}
+/* nav 2.0 */
+
+.navbar-nav {
+    margin :0 !important;;
+}
+
+.jakit-collapsed-button {
+    color: orangered; !important;
+    border: 1px solid orangered !important;
+}
+
+.jakit-collapsed-button .icon-bar {
+    background-color: orangered !important;
+}
+
+.jakit-nav {
+    background-color: #333 !important;
+    background-image: none !important;
+    border-radius: 0px !important;
+    border: 1px solid #00AAAA ;
+}
+
+.brand-font {
+    font-family: 'Orbitron';
+}
+
+.jakit-blog-title {
+    padding: 18px 7px !important;
+    color: white !important;
+    font-size: 25px !important;
+    text-shadow: orangered 2px 2px 3px !important;
+}
+
+.navbar-item {
+    padding: 17px 7px !important;
+}
+
+.navbar-menu-list-divider {
+    background-color: white !important;
+    background-image: none !important;
+    color: orangered !important;
+}
+
+.navbar-menu-list-position {
+    font-size: 0.8em;
+    color: #505050;
+}
+
+li.no-outline:focus {
+    outline: none !important;
+}
+
+.jakit_user_token-input {}
+
+.jakit_user_token-input:focus {
+    outline: -webkit-focus-ring-color none !important;
+}
+
+.jakit_user_token-button {}
+/* _________________________________________ */
+
+
+/* CONTACT PAGE */
+
+.contact-block-error {
+    text-align: center;
+    color: #333;
+    background-color: #c34747;
+    border: 2px #ff0000 inset;
+}
+
+.contact-block-success {
+    text-align: center;
+    color: #333;
+    background-color: #8fd85a;
+    border: 2px #bfe605 inset;
+}
+
+.contact-block-none {}
+
+.contact-block-textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.contact-block-textarea:focus {
+    outline: -webkit-focus-ring-color none !important;
+}
+/* _________________________________________ */

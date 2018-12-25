@@ -1,0 +1,18 @@
+#/**
+# * @Package Jakit Theme
+# * @Version 1.0
+# * @Description Verry simple personal theme,plugin set
+# * @Author Piotr Be <herbalist@herbalist.hekko24.pl>
+# */
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Do rewrite:
+    # RewriteCond TestString CondPattern [flags]
+    #   - all files besides js/* folder
+    RewriteCond %{REQUEST_URI} !.+\.(jpg|jpeg|gif|png|svg|css|js|woff2|ttf)$
+    RewriteCond %{REQUEST_URI} !.+/styles[/]?$
+    RewriteRule (.*) - [F]
+</IfModule>
