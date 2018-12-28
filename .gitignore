@@ -1,2 +1,6 @@
 .htpasswd
 /.htpasswd
+.idea/
+.idea
+/.idea/*
+.idea/*
