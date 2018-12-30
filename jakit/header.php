@@ -102,23 +102,20 @@
                                 </li>
                             </ul>
 
-                            <?php $searchEnabled = get_option('jakit_search_enabled'); ?>
-                            <?php if ($searchEnabled === '1'): ?>
-                                <!--search-->
-                                <form role="search" method="get" id="searchform" class="searchform navbar-form navbar-right" action="/">
-                                    <div>
-                                        <div class="form-group">
-                                            <div class="input-group" >
-                                                <input type="text" value="" name="s" id="s" class="form-control" placeholder="Search" />
-                                                <div class="input-group-addon search-input-buttonfield">
+                            <!--search-->
+                            <form role="search" method="get" id="searchform" class="searchform navbar-form navbar-right" action="/">
+                                <div>
+                                    <div class="form-group">
+                                        <div class="input-group" >
+                                            <input type="text" value="" name="s" id="s" class="form-control" placeholder="Search" />
+                                            <div class="input-group-addon search-input-buttonfield">
 
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                                <!--end search-->
-                            <?php endif ?>
+                                </div>
+                            </form>
+                            <!--end search-->
 
                         </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
