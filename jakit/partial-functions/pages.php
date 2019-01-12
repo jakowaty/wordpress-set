@@ -47,13 +47,18 @@ LI;
 /**
  * @return StdClass[]|[]
  */
-function jakit_return_pages_list()
+function jakit_return_pages_list($excludeTitles = [])
 {
     $result = [];
     $currentUri = jakit_get_current_url();
 
     /** @var WP_Post $page */
     foreach (jakit_get_pages_as_query() as $page) {
+
+        if (in_array($page->post_title, $excludeTitles, true)) {
+            continue;
+        }
+
         $pagePermalink = rtrim(get_permalink($page), '/');
         $isActive = $pagePermalink === $currentUri;
 

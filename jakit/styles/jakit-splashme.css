@@ -1,0 +1,50 @@
+/*
+ * Jakit Wordpress Theme
+ * Author: Piotr Be <herbalist@herbalist.hekko24.pl>
+ */
+
+@font-face {
+    font-family: 'Orbitron';
+    font-weight: normal;
+    src: url('../fonts/Orbitron-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'PoiretOne';
+    font-style: normal;
+    src: url('../fonts/PoiretOne-Regular.ttf') format("truetype");
+}
+
+html {
+    margin-top: 0px !important;
+}
+
+body {
+    height: 100%;
+    /*background: linear-gradient(0deg, orangered, #333);*/
+    /*background: -moz-linear-gradient(0deg, orangered, #333);*/
+    /*background: -o-linear-gradient(0deg, orangered, #333);*/
+    /*background: -webkit-linear-gradient(0deg, orangered, #333);*/
+    /*background: -ms-linear-gradient(0deg, orangered, #333);*/
+    background: url("../images/splashmebackground.jpg");
+}
+
+.splashme-content div, .splashme-content h2 {
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    color: white;
+    font-family: Orbitron;
+}
+
+.splashme-button {
+    color: white !important;;
+    text-decoration: none !important;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.fadeiner {
+    opacity: 0;
+}

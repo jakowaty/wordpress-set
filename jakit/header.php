@@ -36,7 +36,7 @@
                                 <span class="icon-bar"></span>
                             </button>
 
-                            <a class="navbar-brand jakit-blog-title brand-font" href="/">
+                            <a class="navbar-brand jakit-blog-title brand-font" href="/blog">
                                 <?= get_bloginfo('name'); ?>
                             </a>
 
@@ -47,7 +47,7 @@
                             <ul class="nav navbar-nav">
 
 
-                                <?php $pages = jakit_return_pages_list(); ?>
+                                <?php $pages = jakit_return_pages_list(['Blog']); ?>
                                 <?php foreach ($pages as $page): ?>
                                     <li class="jakit-navbar-item-li">
                                         <a href="<?= $page->link; ?>" class="navbar-font navbar-item"><?= $page->title; ?></a>

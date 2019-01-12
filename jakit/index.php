@@ -11,7 +11,6 @@
             $postFormat = get_post_format();
             get_template_part('content', $postFormat);
     endwhile; ?>
-
     <div class="jakit-pagination w96p mauto mbot1e pad3px color-monochrome">
         <?php if (is_home()): ?>
                 <?php if (is_array(jakit_pagination_array([]))): ?>
