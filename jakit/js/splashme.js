@@ -1,9 +1,9 @@
 (function () {
 
     function unfade() {
-        var workElements = document.getElementsByClassName("fadeiner");
+        let workElements = document.getElementsByClassName("fadeiner");
 
-        for (var elem in workElements) {
+        for (let elem in workElements) {
             // var current = workElements.item(elem);
             roll(workElements.item(elem));
         }

@@ -9,42 +9,82 @@
     src: url('../fonts/Orbitron-Regular.ttf') format("truetype");
 }
 
-@font-face {
-    font-family: 'PoiretOne';
-    font-style: normal;
-    src: url('../fonts/PoiretOne-Regular.ttf') format("truetype");
-}
-
 html {
     margin-top: 0px !important;
 }
 
 body {
-    height: 100%;
-    /*background: linear-gradient(0deg, orangered, #333);*/
-    /*background: -moz-linear-gradient(0deg, orangered, #333);*/
-    /*background: -o-linear-gradient(0deg, orangered, #333);*/
-    /*background: -webkit-linear-gradient(0deg, orangered, #333);*/
-    /*background: -ms-linear-gradient(0deg, orangered, #333);*/
-    background: url("../images/splashmebackground.jpg");
+    background: url("../images/bg-pattern2.png"), url("../images/splashmebackground2.jpg") fixed;
+    background-size: auto, cover;
 }
 
 .splashme-content div, .splashme-content h2 {
-    margin-top:0.5em;
-    margin-bottom:0.5em;
     color: white;
     font-family: Orbitron;
 }
 
 .splashme-button {
-    color: white !important;;
+    color: #333333 !important;;
     text-decoration: none !important;
     padding-top: 1em;
     padding-bottom: 1em;
     border: 1px solid white;
     border-radius: 5px;
+    background-color: white;
+    font-weight: bold;
+    
+    -webkit-transition : background-color 500ms linear, color 500ms linear !important;
+    -moz-transition : background-color 500ms linear, color 500ms linear !important;
+    -o-transition : background-color 500ms linear, color 500ms linear !important;
+    transition : background-color 500ms linear, color 500ms linear !important;
+}
+
+.splashme-button:hover {
+    background-color: transparent;
+    color: white !important;
 }
 
 .fadeiner {
     opacity: 0;
+}
+
+.splashme-field {
+    min-height: 30em;
+    position: relative;
+}
+
+.bg-colored-splashme2 {
+    background: #999580;
+}
+
+.br-nosides {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.splashme-first-container {
+    color: white;
+    font-family: Orbitron;
+    width: 100% !important;
+    position: absolute;
+    top: 7em;
+}
+
+.splashme-title {
+    font-size: 34px;
+}
+
+.splashme-badge {
+    display:inline-block;
+    padding: 3px 2px 0px 2px;
+    border: 1px solid white;
+    border-radius: 3px;
+    background-color: white;
+    color: #333333;
+    vertical-align: text-bottom;
+}
+
+.splashme-content-button {
+    position: absolute;
+    top: 10em;
 }

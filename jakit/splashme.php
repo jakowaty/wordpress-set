@@ -31,14 +31,37 @@ Template Name: Splash Page
     </head>
     <body>
 
-        <div class="splashme-content mauto">
-            <h2 class="fadeiner"><?= get_bloginfo('name'); ?></h2>
-            <?= $postContent; ?>
-            <br>
-            <a class="splashme-button block txt-cnt fadeiner" href="/blog">
-                Visit
-            </a>
+
+
+
+
+        <div class="splashme-field prelative">
+            <div class="fadeiner splashme-first-container">
+                <div class="splashme-title txt-cnt">
+                    <?= get_bloginfo('name'); ?>
+                </div>
+                <div class="splashme-content mauto">
+                    <?= $postContent; ?>
+                </div>
+            </div>
         </div>
+
+        <div class="br-solid-white-1 br-nosides">
+            <div class="splashme-content mauto">
+                <div class="fadeiner">
+                    <span class="splashme-badge">Redis</span>.
+                </div>
+            </div>
+        </div>
+
+        <div class="splashme-field prelative">
+            <div class="splashme-content-button mauto">
+                <a class="splashme-button block txt-cnt fadeiner" href="/blog">
+                    Visit
+                </a>
+            </div>
+        </div>
+
         <script src="<?= get_template_directory_uri(); ?>/js/splashme.js"></script>
     </body>
 </html>

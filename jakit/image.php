@@ -27,10 +27,6 @@
 
         </div>
 
-        <div class="jakit-gallery-excerpt l-spac-2p f-size-08em f-stretch-exp color-grey1 mauto" style="width: <?= $src[1]; ?>px">
-            <?php the_excerpt() ?>
-        </div>
-
         <div class="jakit-entry-content ov-hid">
             <a class="jakit-gallery-image-anchor" href="<?= $src[0] ?>" title="<?= $post->post_title ?>">
                 <img
@@ -43,9 +39,8 @@
                 />
             </a>
         </div>
-
-        <div class="jakit-gallery-image-description mauto" style="width: <?= $src[1]; ?>px;">
-            <?= $post->post_content; ?>
+        <div class="jakit-gallery-excerpt l-spac-2p f-size-08em f-stretch-exp color-grey1 mauto" style="width: <?= $src[1]; ?>px; margin-top: 0.4em; ">
+            <?php the_excerpt() ?>
         </div>
 
         <?php if (is_single()): ?>

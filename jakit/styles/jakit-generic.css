@@ -52,7 +52,7 @@
 }
 
 .br-solid-monochrome-1 {
-    border: 1px solid #528013 !important;
+    border: 1px solid #999580 !important;
 }
 
 /* _________________________________________ */
@@ -248,7 +248,11 @@
 }
 
 .bg-monochrome {
-    background-color: #528013 !important;
+    background-color: #999580 !important;
+}
+
+.bg-grey1 {
+    background: #333333;
 }
 
 .color-grey1 {
@@ -276,7 +280,7 @@
 }
 
 .color-monochrome {
-    color: #528013 !important;
+    color: #999580 !important;
 }
 
 .error-msg {
