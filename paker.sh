@@ -7,5 +7,10 @@
 
 for dname in $(ls -d */ | tr -d /); do
     archive_name=$dname'.zip'
+    if [ -e "$archive_name" ]
+    then
+        echo -e "delete " "$archive_name" "...\n"
+        rm -rf "$archive_name"
+    fi
     zip -r $archive_name $dname
 done;
