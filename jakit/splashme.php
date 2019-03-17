@@ -49,6 +49,40 @@ Template Name: Splash Page
         <div class="br-solid-white-1 br-nosides">
             <div class="splashme-content mauto">
                 <div class="fadeiner">
+                    I have worked as PHP developer for:<br>
+                    <span class="splashme-badge">prokantor.pl</span>
+                    <span class="splashme-badge">edu-forma.pl</span>
+                    <span class="splashme-badge">merlin.pl</span>
+                    <span class="splashme-badge">miinto.com</span>.
+                    <br>
+                    I was volunteer PHP programmer in non-governmental organisation:
+                    <span class="splashme-badge">Sieć Obywatelska Watchdog</span>.
+                    <br>
+                    <br>
+                    My current language stack is:<br>
+                    <span class="splashme-badge">PHP</span>
+                    <span class="splashme-badge">SQL</span>
+                    <span class="splashme-badge">Javascript</span>
+                    <span class="splashme-badge">CSS</span>
+                    <span class="splashme-badge">HTML</span>
+                    <br>
+                    where the former two are the least used (I'm mostly focusing on backend).
+                    <br>
+                    I also learn <span class="splashme-badge">Java</span> as I find it interesting.
+                    <br>
+                    <br>
+                    During few years of my work I had occasions to try technologies like: <br>
+                    <span class="splashme-badge">Zend 1.12</span>
+                    <span class="splashme-badge">Symfony 2/3</span>
+                    <span class="splashme-badge">Doctrine</span>
+                    <span class="splashme-badge">REST</span>
+                    <span class="splashme-badge">PHPUnit</span>
+                    <span class="splashme-badge">jQuery</span>
+                    <span class="splashme-badge">Docker</span>
+                    <span class="splashme-badge">git</span>
+                    <span class="splashme-badge">Vagrant</span>
+                    <span class="splashme-badge">SOLR</span>
+                    <span class="splashme-badge">RabbitMQ</span>
                     <span class="splashme-badge">Redis</span>.
                 </div>
             </div>

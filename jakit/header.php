@@ -24,7 +24,7 @@
 
             <!-- MAIN CONTENT col-lg-9 col-md-9 -->
             <div class="main">
-                <nav class="navbar navbar-default jakit-nav w96p mauto">
+                <nav class="navbar navbar-default jakit-nav w96p mauto mtop10p">
 
                     <div class="container-fluid">
                         <!-- Brand and toggle get grouped for better mobile display -->

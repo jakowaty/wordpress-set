@@ -17,6 +17,9 @@
     font-family: PoiretOne !important;
 }
 
+.orbitron-font {
+    font-family: Orbitron !important;
+}
 /**********************body*************************/
 
 /* ELEMENTS */
@@ -113,7 +116,7 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     padding-left: 2%;
     padding-right: 2%;
 }
-    /* _________________________________________ */
+/* _________________________________________ */
 
 
 /* FOOTER */
@@ -124,8 +127,8 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     overflow: hidden;
     color: #333 !important;
     background-color: orangered !important;
-    border: 1px solid black;
-
+    border: 1px solid white;
+    box-shadow: #2b2b2b 3px 3px 6px !important;
 }
 /*___________________________________________*/
 
@@ -133,12 +136,12 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
 
 /* MAIN LOGO */
 /*.page-title {*/
-    /*font-family: PressStart2P;*/
-    /*font-size: 1.5em !important;*/
-    /*letter-spacing: 0.5em;*/
-    /*color: black;!*#f08a00*!*/
-    /*text-shadow: 2px 2px 3px orangered;*/
-    /*line-height: initial;*/
+/*font-family: PressStart2P;*/
+/*font-size: 1.5em !important;*/
+/*letter-spacing: 0.5em;*/
+/*color: black;!*#f08a00*!*/
+/*text-shadow: 2px 2px 3px orangered;*/
+/*line-height: initial;*/
 /*}*/
 
 .page-description {
@@ -258,6 +261,7 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     background-image: none !important;
     border-radius: 0px !important;
     border: 1px solid #00AAAA ;
+    box-shadow: #2b2b2b 3px 3px 6px !important;
 }
 
 .brand-font {
@@ -327,3 +331,48 @@ li.no-outline:focus {
     outline: -webkit-focus-ring-color none !important;
 }
 /* _________________________________________ */
+
+.header-date-gradient {
+    background: linear-gradient(to bottom, #999580, orangered);
+}
+
+.title-header-parent {
+    border-bottom: 2px solid #c3c4c5;
+    border-right: 2px solid #c3c4c5;
+}
+
+.date-header-parent {
+    /*border-bottom: 2px solid #c3c4c5;*/
+    /*border-right: 2px solid #c3c4c5;*/
+
+    padding-bottom: 2px;
+    border-top: 2px solid #5f6d64;
+    border-left: 2px solid #5f6d64;
+    letter-spacing: 1px;
+
+    /*box-shadow: #2b2b2b 1px 1px 1px;*/
+    margin-right: 2em !important;
+    vertical-align: center;
+    font-weight: bold;
+    padding-top: 9px !important;
+}
+
+.header-anchor {
+    text-decoration: none !important;
+}
+
+.header-anchor:hover .date-header-parent {
+    color: orangered;
+}
+
+/*.header-anchor:hover .title-header-parent:first-letter {*/
+/*!*color: orangered;*!*/
+/*}*/
+
+#header-author-section {
+    margin-right: -1px !important;
+}
+
+.post-author {
+    font-weight: lighter;
+}
