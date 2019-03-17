@@ -37,7 +37,7 @@
                     <div><?= $dtPostDate->format('j'); ?> <?= $dtPostDate->format('M'); ?></div>
                     <div><?= $dtPostDate->format('Y'); ?></div>
                 </div>
-
+                <br>
                 <div class="title-header-parent poiret-font inline-block f-size-3em">
                     <?= the_title(); ?>
                 </div>
