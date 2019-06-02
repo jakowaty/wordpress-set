@@ -13,3 +13,5 @@ require_once 're-captcha/customization.php';
 
 require_once 'mail/SmtpSimpleMailQuery.php';
 require_once 'mail/customization.php';
+
+require_once 'image/ImageViewHelper.php';

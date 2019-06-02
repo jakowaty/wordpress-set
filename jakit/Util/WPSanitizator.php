@@ -26,7 +26,7 @@ class WPSanitizator
      * @param string $bool
      * @return string
      */
-    public static function sanitizeBooleanPost(string $bool): string
+    public static function sanitizeBooleanPost(?string $bool): string
     {
         if ($bool !== '1') {
             $bool = '';

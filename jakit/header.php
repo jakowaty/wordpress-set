@@ -15,6 +15,7 @@
         <?php wp_head(); ?>
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/styles/jakit-generic.css">
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/styles/jakit-responsive.css">
+        <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/styles/jakit-image-container.css">
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/styles/style2.css">
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/bootstrap337/css/bootstrap.css" integrity="sha256-fmMNkMcjSw3xcp9iuPnku/ryk9kaWgrEbfJfKmdZ45o=">
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/bootstrap337/css/bootstrap-theme.css" integrity="sha256-xOpS+e/dER8z72w+qryCieOGysQI8cELAVt3MHG0phY=">

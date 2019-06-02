@@ -80,6 +80,10 @@
 
 /* BORDERS */
 
+.br-2px {
+    border-width: 2px !important;
+}
+
 .br-solid-white-1 {
     border: 1px solid white;
 }

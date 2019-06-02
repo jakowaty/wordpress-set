@@ -1,0 +1,39 @@
+/* GALLERY IMAGE VIEW */
+.jakit-gallery-image-anchor {
+
+}
+
+div#img-container {
+    max-width:100%; width: 100%; display: table; position: relative;
+}
+
+.image-nav-button {
+    display: table-cell;
+    position: absolute;
+    z-index: 1000;
+
+    opacity: 0.7;
+    background: black;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    border-radius: 13px;
+
+    border: 1px solid #999580;
+    font-size: 2em;
+}
+
+.img-nav-button-disabled {
+    opacity: 0.3 !important;
+}
+
+.vertical-middle-button {
+    bottom: 42%;
+}
+
+.right-button {
+    right: 2%;
+}
+
+.left-button {
+    left: 2%;
+}

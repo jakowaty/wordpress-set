@@ -123,7 +123,7 @@ function jakit_gallery_main_formatter($selector, $content = '', $class = '')
 HTML_DIV;
 }
 
-function jakit_get_post_images_array(WP_Post $post)
+function jakit_get_post_images_array(WP_Post $post, $attachment_size = 'thumbnail')
 {
     $query_images_args = array(
         'post_type'      => 'attachment',
@@ -137,7 +137,7 @@ function jakit_get_post_images_array(WP_Post $post)
 
     $images = array();
     foreach ( $query_images->posts as $image ) {
-        $images[get_permalink($image->ID)] = wp_get_attachment_image_src($image->ID, 'thumbnail', false);;
+        $images[get_permalink($image->ID)] = wp_get_attachment_image_src($image->ID, $attachment_size, false);
     }
 
     return $images;

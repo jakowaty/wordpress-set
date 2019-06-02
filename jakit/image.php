@@ -5,10 +5,15 @@
 
     <?php
         while ( have_posts() ) : the_post();
-
         $postId = get_the_ID();
         $src = wp_get_attachment_image_src($postId, 'large');
         $meta = wp_get_attachment_metadata($postId);
+        $imageViewHelper = \Jak\Wordpress\Util\Image\ImageViewHelper
+            ::create($post->post_parent)
+            ->setCurrent(\home_url($wp->request) . "/");
+
+        $prevLink = $imageViewHelper->getPreviousLink() ? \key($imageViewHelper->getPreviousLink()) : false;
+        $nextLink = $imageViewHelper->getNextLink() ? \key($imageViewHelper->getNextLink()) : false;
     ?>
 
     <article class="content-article w96p mauto mbot1e" id="image-<?= $postId ?>">
@@ -28,18 +33,42 @@
         </div>
 
         <div class="jakit-entry-content ov-hid">
-            <a class="jakit-gallery-image-anchor" href="<?= $src[0] ?>" title="<?= $post->post_title ?>">
-                <img
-                    width="<?= $src[1]; ?>"
-                    height="<?= $src[2]; ?>"
-                    class="img-fluid jakit-gallery-image block mauto"
-                    src="<?= $src[0] ?>"
-                    alt="<?= get_post_meta($attachment_id, '_wp_attachment_image_alt', true)?>"
-                    title="<?= $post->post_title ?>"
-                />
+
+                <div id="img-container" class="mauto">
+                    <div class="image-nav-button left-button vertical-middle-button
+                    <?= $prevLink ? '' : 'img-nav-button-disabled' ?>">
+                        <?php if ($prevLink): ?>
+                            <a href="<?= $prevLink ?>">
+                        <?php endif ?>
+                                &laquo;
+                        <?php if ($prevLink): ?>
+                            </a>
+                        <?php endif ?>
+                    </div>
+                        <a class="jakit-gallery-image-anchor" href="<?= $src[0] ?>" title="<?= $post->post_title ?>">
+                            <img
+                                class="img-fluid jakit-gallery-image block mauto"
+                                src="<?= $src[0] ?>"
+                                alt="<?= get_post_meta($attachment_id, '_wp_attachment_image_alt', true)?>"
+                                title="<?= $post->post_title ?>"
+                            />
+                        </a>
+                    <div class="image-nav-button right-button vertical-middle-button
+                    <?=  $nextLink ? '' : 'img-nav-button-disabled' ?>">
+                        <?php if ($nextLink): ?>
+                            <a href="<?= $nextLink ?>">
+                        <?php endif ?>
+                                &raquo;
+                        <?php if ($nextLink): ?>
+                            </a>
+                        <?php endif ?>
+                    </div>
+                </div>
             </a>
+
         </div>
-        <div class="jakit-gallery-excerpt l-spac-2p f-size-08em f-stretch-exp color-grey1 mauto" style="width: <?= $src[1]; ?>px; margin-top: 0.4em; ">
+
+        <div class="jakit-gallery-excerpt l-spac-2p f-size-08em f-stretch-exp color-grey1 mauto" style="margin-top: 0.4em; ">
             <?php the_excerpt() ?>
         </div>
 
@@ -52,6 +81,7 @@
             </span>
             </div>
         <?php endif ?>
+
         <hr class="jakit-separator">
     </article>
 

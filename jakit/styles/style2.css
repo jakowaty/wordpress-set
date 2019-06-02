@@ -338,7 +338,6 @@ li.no-outline:focus {
 
 .title-header-parent {
     border-bottom: 2px solid #c3c4c5;
-    /*border-right: 2px solid #c3c4c5;*/
 }
 
 .date-header-parent {
@@ -365,14 +364,14 @@ li.no-outline:focus {
     color: orangered;
 }
 
-/*.header-anchor:hover .title-header-parent:first-letter {*/
-    /*!*color: orangered;*!*/
-/*}*/
-
 #header-author-section {
     margin-right: -1px !important;
 }
 
 .post-author {
  font-weight: lighter;
+}
+
+.jakit-gallery-image {
+    max-width: 100% !important;
 }
