@@ -7,22 +7,16 @@
     src: url('../fonts/Orbitron-Regular.ttf') format("truetype");
 }
 
-@font-face {
-    font-family: 'PoiretOne';
-    font-style: normal;
-    src: url('../fonts/PoiretOne-Regular.ttf') format("truetype");
-}
-
-.poiret-font {
-    font-family: PoiretOne !important;
-}
-
 .orbitron-font {
     font-family: Orbitron !important;
 }
 /**********************body*************************/
 
 /* ELEMENTS */
+
+html {
+    background-color: #333333;
+}
 
 body {
     background-color: white !important;
@@ -70,15 +64,15 @@ body {
 .jakit-entry-title {
     margin-bottom: 0 !important;
     margin-top: 4px !important;
-    font-family: PoiretOne;
+    font-family: Orbitron;
 }
 
 .jakit-entry-meta {
-    font-family: PoiretOne;
+    /*font-family: Orbitron;*/
 }
 
 a .jakit-entry-title, .jakit-pagination a {
-    font-family: PoiretOne;
+    font-family: Orbitron;
 }
 
 a:hover .jakit-entry-title, .jakit-pagination a:hover {
@@ -116,8 +110,28 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     padding-left: 2%;
     padding-right: 2%;
 }
-    /* _________________________________________ */
+/* _________________________________________ */
 
+.cookie-info {
+    min-height: 8em;
+    border:1px solid white;
+    background-color: #333333;
+    top: 0;
+    left: 0;
+}
+
+.cookie-info-text {
+    margin-top: 3em;
+}
+
+.cookie-closer {
+    right: 0.5em;
+    top: 0.5em;
+    border-radius: 50%;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
 
 /* FOOTER */
 .footer {
@@ -127,8 +141,9 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     overflow: hidden;
     color: #333 !important;
     background-color: orangered !important;
-    border: 1px solid white;
-    box-shadow: #2b2b2b 3px 3px 6px !important;
+    border-top: 1px solid white !important ;
+    border-bottom: 1px solid white !important ;
+    box-shadow: #2b2b2b 0px -3px 6px !important;
 }
 /*___________________________________________*/
 
@@ -197,6 +212,17 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
 
 /* NAVBAR */
 
+/*!! override bootstrap */
+
+.navbar {
+    border: none !important;
+}
+
+.navbar-default, .navbar-default .navbar-toggle:focus, .navbar-toggle:hover {
+    border: none !important;
+    background-color: #333 !important;
+}
+
 .jakit-navbar .navbar-toggle {
     background-color: #333;
     border: 1px solid #99D799;
@@ -216,7 +242,7 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     /*-o-transition : border 500ms ease-out !important;*/
     /*transition : border 500ms ease-out !important;*/
 
-    font-family: PoiretOne !important;
+    font-family: Orbitron !important;
     color: white !important;
     -webkit-transition : color 500ms linear !important;
     -moz-transition : color 500ms linear !important;
@@ -243,6 +269,10 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
 }
 /* nav 2.0 */
 
+.menu-dropdown {
+    background-color: #333333 !important;
+}
+
 .navbar-nav {
     margin :0 !important;;
 }
@@ -260,8 +290,9 @@ a:hover .jakit-entry-title, .jakit-pagination a:hover {
     background-color: #333 !important;
     background-image: none !important;
     border-radius: 0px !important;
-    border: 1px solid #00AAAA ;
-    box-shadow: #2b2b2b 3px 3px 6px !important;
+    border-top: 1px solid white !important ;
+    border-bottom: 1px solid white !important ;
+    box-shadow: #2b2b2b 0px 3px 6px !important;
 }
 
 .brand-font {
@@ -334,10 +365,6 @@ li.no-outline:focus {
 
 .header-date-gradient {
     background: linear-gradient(to bottom, #999580, orangered);
-}
-
-.title-header-parent {
-    border-bottom: 2px solid #c3c4c5;
 }
 
 .date-header-parent {

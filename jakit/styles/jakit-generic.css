@@ -93,7 +93,7 @@
 }
 
 .br-solid-monochrome-1 {
-    border: 1px solid #999580 !important;
+    border: 1px solid #333333 !important;
 }
 
 /* _________________________________________ */
@@ -208,6 +208,10 @@
 .pabsolute {
     position: absolute;
 }
+
+.pfixed {
+    position: fixed;
+}
 /* _________________________________________ */
 
 
@@ -315,7 +319,7 @@
 }
 
 .bg-monochrome {
-    background-color: #999580 !important;
+    background-color: #333333 !important;
 }
 
 .bg-grey1 {
@@ -347,7 +351,7 @@
 }
 
 .color-monochrome {
-    color: #999580 !important;
+    color: #333333 !important;
 }
 
 .error-msg {

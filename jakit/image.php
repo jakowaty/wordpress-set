@@ -23,11 +23,11 @@
         <div class="jakit-entry-meta color-monochrome">
             <span class="post-date">
                 <span class="glyphicon glyphicon-calendar f-size-08em" aria-hidden="false"></span>
-                <?= $post->post_date; ?>
+                <span class="orbitron-font"><?= $post->post_date; ?></span>
             </span>
             <span class="post-author">
                 <span class="glyphicon glyphicon-user f-size-08em" aria-hidden="false"></span>
-                <b><?php the_author(); ?></b>
+                <span class="orbitron-font"><?php the_author(); ?></span>
             </span>
 
         </div>
@@ -35,10 +35,10 @@
         <div class="jakit-entry-content ov-hid">
 
                 <div id="img-container" class="mauto">
-                    <div class="image-nav-button left-button vertical-middle-button
+                    <div class="image-nav-button br-solid-monochrome-1 left-button vertical-middle-button
                     <?= $prevLink ? '' : 'img-nav-button-disabled' ?>">
                         <?php if ($prevLink): ?>
-                            <a href="<?= $prevLink ?>">
+                            <a href="<?= $prevLink ?>" title="Previous Image">
                         <?php endif ?>
                                 &laquo;
                         <?php if ($prevLink): ?>
@@ -53,10 +53,10 @@
                                 title="<?= $post->post_title ?>"
                             />
                         </a>
-                    <div class="image-nav-button right-button vertical-middle-button
+                    <div class="image-nav-button br-solid-monochrome-1 right-button vertical-middle-button
                     <?=  $nextLink ? '' : 'img-nav-button-disabled' ?>">
                         <?php if ($nextLink): ?>
-                            <a href="<?= $nextLink ?>">
+                            <a href="<?= $nextLink ?>" title="Next Image">
                         <?php endif ?>
                                 &raquo;
                         <?php if ($nextLink): ?>

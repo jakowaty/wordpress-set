@@ -13,7 +13,13 @@ function jakit_get_current_url()
     return home_url($wp->request);
 }
 
-
+/**
+ * @return bool
+ */
+function jakit_has_cookie_info()
+{
+    return (!empty($_COOKIE['cookie_info']) && $_COOKIE['cookie_info'] === 'yes');
+}
 
 /**
  * @param $args
