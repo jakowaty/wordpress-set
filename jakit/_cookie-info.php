@@ -3,13 +3,17 @@
         <div class="br-solid-white-1 pabsolute cookie-closer">X</div>
         <div class="cookie-info-text w100p txt-cnt">
             This <u>web site uses cookies</u> to deliver content.
-            Staying here means accepting cookies.
         </div>
     </div>
     <script>
         document.getElementsByClassName("cookie-closer").item(0).addEventListener('click', function () {
+            let date = new Date();
+            let expireTime = date.getTime() + 1000*36000;
+
+            date.setTime(expireTime);
+
             document.getElementsByClassName("cookie-info").item(0).style.display = 'none';
-            document.cookie = "cookie_info=yes;path=/";
+            document.cookie = "cookie_info=yes;path=/;expires='" + date.toUTCString() + "'";
         });
     </script>
 <?php endif ?>
