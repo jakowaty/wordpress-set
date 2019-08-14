@@ -16,6 +16,7 @@ html {
 body {
     background: url("../images/bg-pattern2.png"), url("../images/splashmebackground2.jpg") fixed;
     background-size: auto, cover;
+    border: none !important;
 }
 
 .splashme-content div, .splashme-content h2 {
@@ -45,7 +46,7 @@ body {
 }
 
 .fadeiner {
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 .splashme-field {

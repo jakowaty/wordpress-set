@@ -29,12 +29,8 @@ Template Name: Splash Page
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/bootstrap337/css/bootstrap.css" integrity="sha256-fmMNkMcjSw3xcp9iuPnku/ryk9kaWgrEbfJfKmdZ45o=">
         <link rel="stylesheet" href="<?= get_template_directory_uri() ?>/bootstrap337/css/bootstrap-theme.css" integrity="sha256-xOpS+e/dER8z72w+qryCieOGysQI8cELAVt3MHG0phY=">
     </head>
+
     <body>
-
-
-
-
-
         <div class="splashme-field prelative">
             <div class="fadeiner splashme-first-container">
                 <div class="splashme-title txt-cnt">
@@ -68,18 +64,22 @@ Template Name: Splash Page
                     <br>
                     where the former two are the least used (I'm mostly focusing on backend).
                     <br>
-                    I also learn <span class="splashme-badge">Java</span> as I find it interesting.
+                    Currently I'm contributing to <span class="splashme-badge">Opensource System of Archivization (OSA)</span> https://kodujdlapolski.pl/projects/otwarty-system-archiwizacji-osa/
                     <br>
                     <br>
-                    During few years of my work I had occasions to try technologies like: <br>
+                    During few years of my work and other projects I had occasions to try technologies like: <br>
                     <span class="splashme-badge">Zend 1.12</span>
                     <span class="splashme-badge">Symfony 2/3</span>
                     <span class="splashme-badge">Doctrine</span>
                     <span class="splashme-badge">REST</span>
                     <span class="splashme-badge">PHPUnit</span>
                     <span class="splashme-badge">jQuery</span>
-                    <span class="splashme-badge">Docker</span>
                     <span class="splashme-badge">git</span>
+                    <span class="splashme-badge">Docker</span>
+                    <span class="splashme-badge">Vagrant</span>
+                    <span class="splashme-badge">Java 8</span>
+                    <span class="splashme-badge">Swagger UI</span>
+                    <span class="splashme-badge">Spring</span>
                     <span class="splashme-badge">Vagrant</span>
                     <span class="splashme-badge">SOLR</span>
                     <span class="splashme-badge">RabbitMQ</span>
@@ -96,6 +96,6 @@ Template Name: Splash Page
             </div>
         </div>
 
-        <script src="<?= get_template_directory_uri(); ?>/js/splashme.js"></script>
+<!--        <script src="--><?//= get_template_directory_uri(); ?><!--/js/splashme.js"></script>-->
     </body>
 </html>
