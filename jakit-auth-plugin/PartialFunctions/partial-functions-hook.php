@@ -117,7 +117,7 @@ function jakit_current_user_has_role($role)
     $userMeta = get_userdata($user->ID);
     $userRoles = $userMeta->roles;
 
-    return in_array($role, $userRoles);
+    return in_array($role, $userRoles) || in_array(\mb_strtolower($role), $userRoles);
 }
 
 /**
