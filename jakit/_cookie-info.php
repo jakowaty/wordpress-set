@@ -8,7 +8,7 @@
     <script>
         document.getElementsByClassName("cookie-closer").item(0).addEventListener('click', function () {
             let date = new Date();
-            let expireTime = date.getTime() + 1000*36000;
+            let expireTime = date.getTime() + 1000*360000;
 
             date.setTime(expireTime);
 
