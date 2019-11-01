@@ -402,3 +402,20 @@ li.no-outline:focus {
 .jakit-gallery-image {
     max-width: 100% !important;
 }
+
+.wp-block-image img {
+    display: block;
+    margin: auto !important;
+}
+
+.jakit-entry-content p {
+   font-family: Serif;
+   font-size: 17px;
+}
+
+.wp-block-image figcaption {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline #555d66;
+}
